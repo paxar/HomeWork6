@@ -34,8 +34,11 @@ header {
   header h2 {
     color: white;
     font-family: "Droid Sans";
-    font-size: 80px;
-    font-weight: 700; }
+    font-size: 81px;
+    font-weight: 700;
+    display: inline-block;
+    width: 829px;
+    text-align: center; }
 
 .header-nav {
   float: right;
