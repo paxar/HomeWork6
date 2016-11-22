@@ -24,4 +24,33 @@
   display: table;
   clear: both; }
 
+header {
+  background: url("../img/header-background.png") center no-repeat;
+  overflow: hidden; }
+  header h1 {
+    float: left;
+    padding-left: 50px;
+    padding-top: 50px; }
+  header h2 {
+    color: white;
+    font-family: "Droid Sans";
+    font-size: 80px;
+    font-weight: 700; }
+
+.header-nav {
+  float: right;
+  margin-top: 50px;
+  margin-right: 50px; }
+  .header-nav ul {
+    list-style-type: none; }
+  .header-nav li {
+    display: inline-block;
+    padding: 0 15px; }
+    .header-nav li a {
+      color: white;
+      font-family: "Droid Sans";
+      font-size: 22px;
+      font-weight: 400;
+      text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
