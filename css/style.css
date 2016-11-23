@@ -24,21 +24,16 @@
   display: table;
   clear: both; }
 
-header {
+.intro-bg {
   background: url("../img/header-background.png") center no-repeat;
+  height: 777px; }
+
+header {
   overflow: hidden; }
   header h1 {
     float: left;
     padding-left: 50px;
     padding-top: 50px; }
-  header h2 {
-    color: white;
-    font-family: "Droid Sans";
-    font-size: 81px;
-    font-weight: 700;
-    display: inline-block;
-    width: 829px;
-    text-align: center; }
 
 .header-nav {
   float: right;
@@ -55,5 +50,15 @@ header {
       font-size: 22px;
       font-weight: 400;
       text-decoration: none; }
+
+.intro h2 {
+  color: white;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 81px;
+  font-weight: 700;
+  padding-left: 200px;
+  /* display: inline-block; */
+  width: 829px;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

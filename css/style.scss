@@ -42,8 +42,14 @@
 
 //------------------ main styles --------------
 
-header {
+.intro-bg {
   background: url("../img/header-background.png") center no-repeat;
+  height: 777px; // TEMP
+
+
+}
+header {
+
   overflow: hidden;
   h1 {
     float: left;
@@ -51,15 +57,7 @@ header {
     padding-top: 50px;
 
   }
-  h2 {
-    color: white;
-    font-family: "Droid Sans";
-    font-size: 81px;
-    font-weight: 700;
-    display: inline-block;
-    width: 829px;
-    text-align: center;
-  }
+
 
 }
 
@@ -84,4 +82,17 @@ header {
     }
   }
 
+}
+
+.intro {
+  h2 {
+    color: white;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 81px;
+    font-weight: 700;
+    padding-left: 200px;
+    /* display: inline-block; */
+    width: 829px;
+    text-align: center;
+  }
 }
