@@ -17,7 +17,8 @@
 .wrapper {
   width: 1280px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 1px dotted; }
 
 .clearfix::after {
   content: "";
@@ -85,12 +86,10 @@ header {
   /* margin-left: 210px; */
   padding: 0;
   list-style-type: none; }
-  .content-list .content-list-item:nth-child(n+2) {
-    margin-left: 120px; }
   .content-list .content-list-item {
     display: inline-block;
     width: 200px;
-    margin-left: 2px;
+    margin: 0 60px;
     text-align: center;
     color: white; }
     .content-list .content-list-item img {
@@ -178,7 +177,6 @@ header {
     padding: 0; }
 
 .feedback {
-  background-color: antiquewhite;
   height: 860px;
   color: #2c3e50; }
   .feedback h2 {
@@ -192,14 +190,32 @@ header {
     font-weight: 700;
     text-align: center; }
 
+.feedback-items-wrapper {
+  float: right;
+  overflow: hidden; }
+
 #feedback-form {
-  width: 314px;
+  width: 370px;
   float: left;
-  margin-left: 300px; }
+  margin-right: 50px; }
+  #feedback-form input[name] {
+    width: inherit;
+    /* height: 31px; */
+    border: none;
+    margin: 10px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #2ecc71;
+    color: #2c3e50;
+    font-family: "Droid Serif";
+    font-size: 26px;
+    font-weight: 400; }
+  #feedback-form textarea {
+    resize: none; }
 
 .feedback-contacts {
   width: 210px;
   overflow: hidden;
+  margin-right: 220px;
   font-family: "Droid Sans", sans-serif; }
   .feedback-contacts dt {
     margin-bottom: 10px;

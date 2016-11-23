@@ -41,7 +41,8 @@
   width: 1280px;
   margin: 0 auto;
   overflow: hidden;
-  //background-color: silver;
+  //background-color: silver; //TEST
+  border: 1px dotted;  //TEST
 }
 
 .clearfix::after {
@@ -142,12 +143,12 @@ header {
   list-style-type: none;
 
   .content-list-item:nth-child(n+2) {
-    margin-left: 120px;
+    //margin-left: 120px;
   }
   .content-list-item {
     display: inline-block;
     width: 200px;
-    margin-left: 2px;
+    margin: 0 60px;
     text-align: center;
     color: white;
 
@@ -276,7 +277,7 @@ header {
 
 .feedback {
 
-  background-color: antiquewhite; // TEMP
+  //background-color: antiquewhite; // TEMP
   height: 860px; //  TEMP
   color: #2c3e50;
   h2 {
@@ -291,16 +292,39 @@ header {
   }
 }
 
+.feedback-items-wrapper {
+  float: right;
+  overflow: hidden;
+}
+
 #feedback-form {
-  width: 314px;
+  width: 370px;
   float: left;
-  margin-left: 300px;
+  margin-right: 50px;
+
+  //margin-left: 300px;
   //overflow: hidden;
+  input[name] {
+    width: inherit;
+    /* height: 31px; */
+    border: none;
+    margin: 10px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #2ecc71;
+    color: #2c3e50;
+    font-family: "Droid Serif";
+    font-size: 26px;
+    font-weight: 400;
+  }
+  textarea {
+    resize: none;
+  }
 }
 
 .feedback-contacts {
   width: 210px;
   overflow: hidden;
+  margin-right: 220px;
   font-family: "Droid Sans", sans-serif;
   dt {
     margin-bottom: 10px;
