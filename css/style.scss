@@ -110,10 +110,31 @@ header {
     /* display: inline-block; */
     width: 829px;
     text-align: center;
+
   }
   a {
+    width: 100px;
     display: block;
-    text-align: center;
+    margin: 0 auto;
+    /* text-align: center; */
+    font-family: "Droid Serif", serif;
+    font-size: 27px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    span {
+
+      display: block;
+      width: 59px;
+      height: 59px;
+      margin: 20px auto;
+      border: 1px solid #2ecc71;
+      border-radius: 50%;
+      background-color: #2ecc71;
+      background-image: url(../img/rounded-arrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 
@@ -174,7 +195,7 @@ header {
 
 //-------------------------  icon-group ------------------------
 .icon-group {
-  background-color: antiquewhite; // TEMP
+  //background-color: antiquewhite; // TEMP
   height: 1046px; //TEMP
   color: #2c3e50;
 
@@ -194,10 +215,11 @@ header {
   li {
     display: inline-block;
     padding: 0;
+    margin: 0 20px;
     //padding: 0 15px;
   }
   li:nth-child(n+2) {
-    margin-left: 55px;
+    //margin-left: 55px;
   }
   a {
 
@@ -215,12 +237,16 @@ header {
 
 .icon-group-list {
   list-style-type: none;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-left: 40px;
   padding: 0;
+
 
   li {
     display: inline-block;
-    padding: 0;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #e9e9e9;
 
   }
 }
@@ -246,15 +272,20 @@ header {
 }
 
 .persons-list-item:first-child {
-  margin-right: 100px;
+  //margin-right: 100px;
 }
 
 .persons-list-item {
   display: inline-block;
   width: 300px;
+  margin: 0 50px;
   padding: 0;
   text-align: center;
   img {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
   }
   h3 {
     font-family: "Droid Sans";
@@ -302,18 +333,28 @@ header {
 }
 
 #feedback-form {
-  width: 370px;
+  width: 440px;
   float: left;
   margin-right: 50px;
 
-  //margin-left: 300px;
-  //overflow: hidden;
+  label {
+    /* display: block; */
+    float: left;
+    /* overflow: hidden; */
+    border-bottom: 2px solid #2ecc71;
+    color: #2c3e50;
+    font-family: "Droid Serif";
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+
   input[name] {
-    width: inherit;
+    /* width: inherit; */
     /* height: 31px; */
     border: none;
-    margin: 10px 0;
-    padding: 5px 0;
+    /* margin: 10px 0; */
+    /* padding: 5px 0; */
     border-bottom: 2px solid #2ecc71;
     color: #2c3e50;
     font-family: "Droid Serif";

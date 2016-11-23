@@ -63,8 +63,26 @@ header {
   width: 829px;
   text-align: center; }
 .intro a {
+  width: 100px;
   display: block;
-  text-align: center; }
+  margin: 0 auto;
+  /* text-align: center; */
+  font-family: "Droid Serif", serif;
+  font-size: 27px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none; }
+  .intro a span {
+    display: block;
+    width: 59px;
+    height: 59px;
+    margin: 20px auto;
+    border: 1px solid #2ecc71;
+    border-radius: 50%;
+    background-color: #2ecc71;
+    background-image: url(../img/rounded-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center; }
 
 .content {
   background-color: #34495e;
@@ -106,7 +124,6 @@ header {
       font-size: 20px; }
 
 .icon-group {
-  background-color: antiquewhite;
   height: 1046px;
   color: #2c3e50; }
   .icon-group h2 {
@@ -122,9 +139,8 @@ header {
   width: 690px; }
 .icon-group-nav li {
   display: inline-block;
-  padding: 0; }
-.icon-group-nav li:nth-child(n+2) {
-  margin-left: 55px; }
+  padding: 0;
+  margin: 0 20px; }
 .icon-group-nav a {
   font-family: "Droid Sans", sans-serif;
   font-size: 30px;
@@ -134,11 +150,14 @@ header {
 
 .icon-group-list {
   list-style-type: none;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-left: 40px;
   padding: 0; }
   .icon-group-list li {
     display: inline-block;
-    padding: 0; }
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #e9e9e9; }
 
 .persons {
   background-color: #2980b9;
@@ -157,14 +176,17 @@ header {
   padding: 0;
   text-align: center; }
 
-.persons-list-item:first-child {
-  margin-right: 100px; }
-
 .persons-list-item {
   display: inline-block;
   width: 300px;
+  margin: 0 50px;
   padding: 0;
   text-align: center; }
+  .persons-list-item img {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white; }
   .persons-list-item h3 {
     font-family: "Droid Sans";
     font-size: 26px;
@@ -198,15 +220,24 @@ header {
   overflow: hidden; }
 
 #feedback-form {
-  width: 370px;
+  width: 440px;
   float: left;
   margin-right: 50px; }
+  #feedback-form label {
+    /* display: block; */
+    float: left;
+    /* overflow: hidden; */
+    border-bottom: 2px solid #2ecc71;
+    color: #2c3e50;
+    font-family: "Droid Serif";
+    font-size: 28px;
+    font-weight: 400; }
   #feedback-form input[name] {
-    width: inherit;
+    /* width: inherit; */
     /* height: 31px; */
     border: none;
-    margin: 10px 0;
-    padding: 5px 0;
+    /* margin: 10px 0; */
+    /* padding: 5px 0; */
     border-bottom: 2px solid #2ecc71;
     color: #2c3e50;
     font-family: "Droid Serif";
