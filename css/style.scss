@@ -20,6 +20,15 @@
   font-style: normal;
 }
 
+// ----------------- mixins ------------------
+
+@mixin h2-std {
+  margin-top: 120px;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+
 //------------shared styles -------------------
 
 .body {
@@ -31,6 +40,7 @@
 .wrapper {
   width: 1280px;
   margin: 0 auto;
+  overflow: hidden;
   //background-color: silver;
 }
 
@@ -48,13 +58,11 @@
   background-size: cover;
   height: 777px; // TEMP
 
-
 }
 
 //-------------header--------------------------
 header {
   overflow: hidden;
-
 
   h1 {
     float: left;
@@ -78,11 +86,11 @@ header {
     display: inline-block;
     padding: 0 15px;
     a {
-      color: white;
-      font-family: "Droid Sans";
-      font-size: 22px;
-      font-weight: 400;
-      text-decoration: none;
+	 color: white;
+	 font-family: "Droid Sans";
+	 font-size: 22px;
+	 font-weight: 400;
+	 text-decoration: none;
     }
   }
 
@@ -108,24 +116,72 @@ header {
 .content {
   background-color: #34495e;
   height: 1153px; // TEMP
-}
 
+  h2 {
+    @include h2-std;
+    color: #fff;
+  }
+  article {
+    p {
+	 width: 758px;
+	 margin: 0 auto;
+	 font-family: "Droid Serif", serif;
+	 font-size: 24px;
+	 color: white;
+
+    }
+  }
+  ul {
+    width: 950px;
+    /* margin: 0 auto; */
+    margin-left: 210px;
+    padding: 0;
+    list-style-type: none;
+
+    li:nth-child(n+2) {
+      margin-left: 120px;
+    }
+    li {
+      display: inline-block;
+      width:200px;
+      margin-left: 2px;
+      text-align: center;
+      color: white;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      h3 {
+        font-family: "Droid Sans";
+        font-size: 26px;
+      }
+      p {
+        font-family: "Droid Serif";
+        font-size: 20px;
+      }
+    }
+  }
+}
 
 //-------------------------  icon-group ------------------------
 .icon-group {
+
   background-color: antiquewhite; // TEMP
-  height: 1046px;  //TEMP
+  height: 1046px; //TEMP
 }
 
 //--------------------------  persons  ---------------------------
 .persons {
+
   background-color: #2980b9;
-  height: 907px;  // TEMP
+  height: 907px; // TEMP
 }
 
 //---------------------------   feedback -------------------------
 
 .feedback {
+
   background-color: antiquewhite; // TEMP
   height: 860px; //  TEMP
 }

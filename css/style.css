@@ -16,7 +16,8 @@
 
 .wrapper {
   width: 1280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 .clearfix::after {
   content: "";
@@ -64,6 +65,41 @@ header {
 .content {
   background-color: #34495e;
   height: 1153px; }
+  .content h2 {
+    margin-top: 120px;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: #fff; }
+  .content article p {
+    width: 758px;
+    margin: 0 auto;
+    font-family: "Droid Serif", serif;
+    font-size: 24px;
+    color: white; }
+  .content ul {
+    width: 950px;
+    /* margin: 0 auto; */
+    margin-left: 210px;
+    padding: 0;
+    list-style-type: none; }
+    .content ul li:nth-child(n+2) {
+      margin-left: 120px; }
+    .content ul li {
+      display: inline-block;
+      width: 200px;
+      margin-left: 2px;
+      text-align: center;
+      color: white; }
+      .content ul li img {
+        display: block;
+        margin: 0 auto; }
+      .content ul li h3 {
+        font-family: "Droid Sans";
+        font-size: 26px; }
+      .content ul li p {
+        font-family: "Droid Serif";
+        font-size: 20px; }
 
 .icon-group {
   background-color: antiquewhite;
