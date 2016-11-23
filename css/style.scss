@@ -131,33 +131,34 @@ header {
 
     }
   }
-  ul {
+  .content-list {
     width: 950px;
     /* margin: 0 auto; */
     margin-left: 210px;
     padding: 0;
     list-style-type: none;
 
-    li:nth-child(n+2) {
+    .content-list-item:nth-child(n+2) {
       margin-left: 120px;
     }
-    li {
+    .content-list-item {
       display: inline-block;
       width:200px;
       margin-left: 2px;
       text-align: center;
       color: white;
+
       img {
         display: block;
         margin: 0 auto;
       }
 
       h3 {
-        font-family: "Droid Sans";
+        font-family: "Droid Sans", sans-serif;
         font-size: 26px;
       }
       p {
-        font-family: "Droid Serif";
+        font-family: "Droid Serif", serif;
         font-size: 20px;
       }
     }
@@ -166,9 +167,53 @@ header {
 
 //-------------------------  icon-group ------------------------
 .icon-group {
-
   background-color: antiquewhite; // TEMP
   height: 1046px; //TEMP
+  color: #2c3e50;
+
+  h2 {
+    @include h2-std;
+
+  }
+}
+.icon-group-nav {
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 690px;
+  }
+  li {
+    display: inline-block;
+    padding: 0;
+    //padding: 0 15px;
+  }
+  li:nth-child(n+2) {
+    margin-left: 55px;
+  }
+  a {
+
+    font-family: "Droid Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #2c3e50;
+
+  }
+  .active {}
+
+}
+
+.icon-group-list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding: 0;
+
+  }
 }
 
 //--------------------------  persons  ---------------------------
@@ -176,6 +221,45 @@ header {
 
   background-color: #2980b9;
   height: 907px; // TEMP
+  color: white;
+  h2 {
+    @include h2-std;
+
+  }
+}
+.persons-list {
+  width: 740px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.persons-list-item:first-child {
+  margin-right: 100px;
+}
+.persons-list-item {
+  display: inline-block;
+  width: 300px;
+  padding: 0;
+  text-align: center;
+  img {}
+  h3 {
+    font-family: "Droid Sans";
+    font-size: 26px;
+    font-weight: 700;
+  }
+  p {
+    font-family: "Droid Serif";
+    font-size: 20px;
+    font-weight: 400;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    padding: 0;
+    a{}
+  }
 }
 
 //---------------------------   feedback -------------------------

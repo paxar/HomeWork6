@@ -77,37 +77,102 @@ header {
     font-family: "Droid Serif", serif;
     font-size: 24px;
     color: white; }
-  .content ul {
+  .content .content-list {
     width: 950px;
     /* margin: 0 auto; */
     margin-left: 210px;
     padding: 0;
     list-style-type: none; }
-    .content ul li:nth-child(n+2) {
+    .content .content-list .content-list-item:nth-child(n+2) {
       margin-left: 120px; }
-    .content ul li {
+    .content .content-list .content-list-item {
       display: inline-block;
       width: 200px;
       margin-left: 2px;
       text-align: center;
       color: white; }
-      .content ul li img {
+      .content .content-list .content-list-item img {
         display: block;
         margin: 0 auto; }
-      .content ul li h3 {
-        font-family: "Droid Sans";
+      .content .content-list .content-list-item h3 {
+        font-family: "Droid Sans", sans-serif;
         font-size: 26px; }
-      .content ul li p {
-        font-family: "Droid Serif";
+      .content .content-list .content-list-item p {
+        font-family: "Droid Serif", serif;
         font-size: 20px; }
 
 .icon-group {
   background-color: antiquewhite;
-  height: 1046px; }
+  height: 1046px;
+  color: #2c3e50; }
+  .icon-group h2 {
+    margin-top: 120px;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 45px;
+    text-align: center; }
+
+.icon-group-nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 690px; }
+.icon-group-nav li {
+  display: inline-block;
+  padding: 0; }
+.icon-group-nav li:nth-child(n+2) {
+  margin-left: 55px; }
+.icon-group-nav a {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #2c3e50; }
+
+.icon-group-list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0; }
+  .icon-group-list li {
+    display: inline-block;
+    padding: 0; }
 
 .persons {
   background-color: #2980b9;
-  height: 907px; }
+  height: 907px;
+  color: white; }
+  .persons h2 {
+    margin-top: 120px;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 45px;
+    text-align: center; }
+
+.persons-list {
+  width: 740px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0; }
+
+.persons-list-item:first-child {
+  margin-right: 100px; }
+
+.persons-list-item {
+  display: inline-block;
+  width: 300px;
+  padding: 0;
+  text-align: center; }
+  .persons-list-item h3 {
+    font-family: "Droid Sans";
+    font-size: 26px;
+    font-weight: 700; }
+  .persons-list-item p {
+    font-family: "Droid Serif";
+    font-size: 20px;
+    font-weight: 400; }
+  .persons-list-item ul {
+    list-style-type: none; }
+  .persons-list-item li {
+    display: inline-block;
+    padding: 0; }
 
 .feedback {
   background-color: antiquewhite;
