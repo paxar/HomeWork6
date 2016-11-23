@@ -77,29 +77,30 @@ header {
     font-family: "Droid Serif", serif;
     font-size: 24px;
     color: white; }
-  .content .content-list {
-    width: 950px;
-    /* margin: 0 auto; */
-    margin-left: 210px;
-    padding: 0;
-    list-style-type: none; }
-    .content .content-list .content-list-item:nth-child(n+2) {
-      margin-left: 120px; }
-    .content .content-list .content-list-item {
-      display: inline-block;
-      width: 200px;
-      margin-left: 2px;
-      text-align: center;
-      color: white; }
-      .content .content-list .content-list-item img {
-        display: block;
-        margin: 0 auto; }
-      .content .content-list .content-list-item h3 {
-        font-family: "Droid Sans", sans-serif;
-        font-size: 26px; }
-      .content .content-list .content-list-item p {
-        font-family: "Droid Serif", serif;
-        font-size: 20px; }
+
+.content-list {
+  width: 950px;
+  /* margin: 0 auto; */
+  margin-left: 210px;
+  padding: 0;
+  list-style-type: none; }
+  .content-list .content-list-item:nth-child(n+2) {
+    margin-left: 120px; }
+  .content-list .content-list-item {
+    display: inline-block;
+    width: 200px;
+    margin-left: 2px;
+    text-align: center;
+    color: white; }
+    .content-list .content-list-item img {
+      display: block;
+      margin: 0 auto; }
+    .content-list .content-list-item h3 {
+      font-family: "Droid Sans", sans-serif;
+      font-size: 26px; }
+    .content-list .content-list-item p {
+      font-family: "Droid Serif", serif;
+      font-size: 20px; }
 
 .icon-group {
   background-color: antiquewhite;
@@ -176,7 +177,42 @@ header {
 
 .feedback {
   background-color: antiquewhite;
-  height: 860px; }
+  height: 860px;
+  color: #2c3e50; }
+  .feedback h2 {
+    margin-top: 120px;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 45px;
+    text-align: center; }
+  .feedback p {
+    font-family: "Droid Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center; }
+
+#feedback-form {
+  width: 314px;
+  float: left;
+  margin-left: 300px; }
+
+.feedback-contacts {
+  width: 210px;
+  overflow: hidden;
+  font-family: "Droid Sans", sans-serif; }
+  .feedback-contacts dt {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700; }
+  .feedback-contacts dt:nth-of-type(n+2) {
+    margin-top: 20px; }
+  .feedback-contacts dd {
+    margin-left: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px; }
+    .feedback-contacts dd a {
+      text-decoration: none;
+      color: #2c3e50; }
 
 .footer {
   height: 282px;
