@@ -1,3 +1,4 @@
+/*
 .effect {
     position: relative;
 }
@@ -51,4 +52,35 @@
 }
 .eff-1-1:hover .caption {
     top: 0px;
+}*/
+
+.icon-group-list {
+    float: left;
+
 }
+.icon-group-list:hover .hover {
+    /*top: 0px;*/
+    display: block;
+}
+.icon-group-list li {
+    width: 348px;
+    height: 260px;
+}
+
+.hover {
+    position: relative;
+    display: none;
+    top: -110%;
+    width: inherit;
+    height: inherit;
+    background-color: rgba( 0, 0, 0, 0.5);
+
+}
+.hover h4 {
+
+}
+
+.hover a {
+
+}
+
