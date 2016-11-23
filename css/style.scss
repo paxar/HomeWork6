@@ -132,39 +132,40 @@ header {
     }
   }
 }
-  .content-list {
-    width: 950px;
-    /* margin: 0 auto; */
-    margin-left: 210px;
-    padding: 0;
-    list-style-type: none;
 
-    .content-list-item:nth-child(n+2) {
-      margin-left: 120px;
+.content-list {
+  text-align: center;
+  /* width: 950px; */
+  /* margin: 0 auto; */
+  /* margin-left: 210px; */
+  padding: 0;
+  list-style-type: none;
+
+  .content-list-item:nth-child(n+2) {
+    margin-left: 120px;
+  }
+  .content-list-item {
+    display: inline-block;
+    width: 200px;
+    margin-left: 2px;
+    text-align: center;
+    color: white;
+
+    img {
+	 display: block;
+	 margin: 0 auto;
     }
-    .content-list-item {
-      display: inline-block;
-      width:200px;
-      margin-left: 2px;
-      text-align: center;
-      color: white;
 
-      img {
-        display: block;
-        margin: 0 auto;
-      }
-
-      h3 {
-        font-family: "Droid Sans", sans-serif;
-        font-size: 26px;
-      }
-      p {
-        font-family: "Droid Serif", serif;
-        font-size: 20px;
-      }
+    h3 {
+	 font-family: "Droid Sans", sans-serif;
+	 font-size: 26px;
+    }
+    p {
+	 font-family: "Droid Serif", serif;
+	 font-size: 20px;
     }
   }
-
+}
 
 //-------------------------  icon-group ------------------------
 .icon-group {
@@ -177,6 +178,7 @@ header {
 
   }
 }
+
 .icon-group-nav {
   ul {
     list-style-type: none;
@@ -201,7 +203,8 @@ header {
     color: #2c3e50;
 
   }
-  .active {}
+  .active {
+  }
 
 }
 
@@ -228,21 +231,26 @@ header {
 
   }
 }
+
 .persons-list {
-  width: 740px;
+  /* width: 740px; */
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  text-align: center;
 }
+
 .persons-list-item:first-child {
   margin-right: 100px;
 }
+
 .persons-list-item {
   display: inline-block;
   width: 300px;
   padding: 0;
   text-align: center;
-  img {}
+  img {
+  }
   h3 {
     font-family: "Droid Sans";
     font-size: 26px;
@@ -259,7 +267,8 @@ header {
   li {
     display: inline-block;
     padding: 0;
-    a{}
+    a {
+    }
   }
 }
 
@@ -281,6 +290,7 @@ header {
     text-align: center;
   }
 }
+
 #feedback-form {
   width: 314px;
   float: left;
@@ -306,14 +316,14 @@ header {
     font-weight: 400;
     line-height: 33px;
     a {
-      text-decoration: none;
-      color: #2c3e50;
+	 text-decoration: none;
+	 color: #2c3e50;
 
     }
   }
 
-
 }
+
 //---------------------------   footer  --------------------------
 .footer {
   height: 282px; // TEMP
