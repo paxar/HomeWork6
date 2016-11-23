@@ -16,8 +16,7 @@
 
 .wrapper {
   width: 1280px;
-  margin: 0 auto;
-  background-color: silver; }
+  margin: 0 auto; }
 
 .clearfix::after {
   content: "";
@@ -26,6 +25,7 @@
 
 .intro-bg {
   background: url("../img/header-background.png") center no-repeat;
+  background-size: cover;
   height: 777px; }
 
 header {
@@ -60,5 +60,25 @@ header {
   /* display: inline-block; */
   width: 829px;
   text-align: center; }
+
+.content {
+  background-color: #34495e;
+  height: 1153px; }
+
+.icon-group {
+  background-color: antiquewhite;
+  height: 1046px; }
+
+.persons {
+  background-color: #2980b9;
+  height: 907px; }
+
+.feedback {
+  background-color: antiquewhite;
+  height: 860px; }
+
+.footer {
+  height: 282px;
+  background-color: #2c3e50; }
 
 /*# sourceMappingURL=style.css.map */

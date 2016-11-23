@@ -31,7 +31,7 @@
 .wrapper {
   width: 1280px;
   margin: 0 auto;
-  background-color: silver;
+  //background-color: silver;
 }
 
 .clearfix::after {
@@ -42,22 +42,26 @@
 
 //------------------ main styles --------------
 
+//
 .intro-bg {
   background: url("../img/header-background.png") center no-repeat;
+  background-size: cover;
   height: 777px; // TEMP
 
 
 }
-header {
 
+//-------------header--------------------------
+header {
   overflow: hidden;
+
+
   h1 {
     float: left;
     padding-left: 50px;
     padding-top: 50px;
 
   }
-
 
 }
 
@@ -84,7 +88,10 @@ header {
 
 }
 
+//---------------------  intro  --------------------------
+
 .intro {
+
   h2 {
     color: white;
     font-family: "Droid Sans", sans-serif;
@@ -95,4 +102,36 @@ header {
     width: 829px;
     text-align: center;
   }
+}
+
+//---------------------------  content -------------------------
+.content {
+  background-color: #34495e;
+  height: 1153px; // TEMP
+}
+
+
+//-------------------------  icon-group ------------------------
+.icon-group {
+  background-color: antiquewhite; // TEMP
+  height: 1046px;  //TEMP
+}
+
+//--------------------------  persons  ---------------------------
+.persons {
+  background-color: #2980b9;
+  height: 907px;  // TEMP
+}
+
+//---------------------------   feedback -------------------------
+
+.feedback {
+  background-color: antiquewhite; // TEMP
+  height: 860px; //  TEMP
+}
+
+//---------------------------   footer  --------------------------
+.footer {
+  height: 282px; // TEMP
+  background-color: #2c3e50;
 }
