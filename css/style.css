@@ -167,16 +167,17 @@ header {
       height: inherit; }
     .icon-group-list li .hover {
       position: absolute;
-      display: none;
       top: 10px;
       width: inherit;
       height: inherit;
-      background-color: rgba(0, 0, 0, 0.3);
-      transition: 1; }
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.8s, visibility 0s 0.8s; }
 
 .icon-group-list li:hover .hover {
-  /*top: 0px;*/
-  display: block; }
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s, visibility 0s; }
 
 .persons {
   background-color: #2980b9;
