@@ -102,8 +102,7 @@ header {
   color: #2ecc71; }
 
 .content {
-  background-color: #34495e;
-  height: 1153px; }
+  background-color: #34495e; }
   .content h2 {
     margin-top: 120px;
     font-family: "Droid Sans", sans-serif;
@@ -111,12 +110,16 @@ header {
     text-align: center;
     letter-spacing: 1px;
     color: #fff; }
-  .content article p {
-    width: 758px;
-    margin: 0 auto;
-    font-family: "Droid Serif", serif;
-    font-size: 24px;
-    color: white; }
+
+.content-intro {
+  width: 756px;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-family: "Droid Serif", serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 33px;
+  color: white; }
 
 .content-list {
   text-align: center;
@@ -124,10 +127,12 @@ header {
   /* margin: 0 auto; */
   /* margin-left: 210px; */
   padding: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  margin-top: 145px;
+  margin-bottom: 84px; }
   .content-list .content-list-item {
     display: inline-block;
-    width: 200px;
+    width: 231px;
     margin: 0 60px;
     text-align: center;
     color: white; }
@@ -138,8 +143,20 @@ header {
       font-family: "Droid Sans", sans-serif;
       font-size: 26px; }
     .content-list .content-list-item p {
-      font-family: "Droid Serif", serif;
-      font-size: 20px; }
+      color: white;
+      font-family: "Droid Serif";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px; }
+  .content-list .bootstrap-icon {
+    background: url("../img/bootstrap-icon.png") no-repeat top;
+    padding-top: 152px; }
+  .content-list .retina-icon {
+    background: url("../img/retina-icon.png") no-repeat top;
+    padding-top: 152px; }
+  .content-list .support-icon {
+    background: url("../img/support-icon.png") no-repeat top;
+    padding-top: 152px; }
 
 .icon-group {
   color: #2c3e50; }

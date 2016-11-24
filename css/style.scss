@@ -170,22 +170,24 @@ header {
 //---------------------------  content -------------------------
 .content {
   background-color: #34495e;
-  height: 1153px; // TEMP
+  // height: 1153px; // TEMP
 
   h2 {
     @include h2-std;
     color: #fff;
   }
-  article {
-    p {
-	 width: 758px;
-	 margin: 0 auto;
-	 font-family: "Droid Serif", serif;
-	 font-size: 24px;
-	 color: white;
 
-    }
-  }
+}
+.content-intro {
+  width: 756px;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-family: "Droid Serif", serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 33px;
+  color: white;
+
 }
 
 .content-list {
@@ -195,13 +197,15 @@ header {
   /* margin-left: 210px; */
   padding: 0;
   list-style-type: none;
+  margin-top: 145px;
+  margin-bottom: 84px;
 
   .content-list-item:nth-child(n+2) {
     //margin-left: 120px;
   }
   .content-list-item {
     display: inline-block;
-    width: 200px;
+    width: 231px;
     margin: 0 60px;
     text-align: center;
     color: white;
@@ -216,9 +220,31 @@ header {
 	 font-size: 26px;
     }
     p {
-	 font-family: "Droid Serif", serif;
-	 font-size: 20px;
+
+
+      color: white;
+      font-family: "Droid Serif";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
     }
+
+
+  }
+  .bootstrap-icon {
+    background: url("../img/bootstrap-icon.png") no-repeat top;
+    padding-top: 152px;
+
+  }
+  .retina-icon {
+    background: url("../img/retina-icon.png") no-repeat top;
+    padding-top: 152px;
+
+  }
+  .support-icon {
+    background: url("../img/support-icon.png") no-repeat top;
+    padding-top: 152px;
+
   }
 }
 
