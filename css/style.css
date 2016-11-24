@@ -59,6 +59,11 @@ header {
       transition-duration: 0.5s; }
     .header-nav li a:hover {
       letter-spacing: 1px; }
+    .header-nav li a:active {
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
 
 .intro h2 {
   color: white;
