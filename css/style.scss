@@ -262,20 +262,45 @@ header {
 	 top: 10px;
 	 width: inherit;
 	 height: inherit;
-	 background-color: rgba(0, 0, 0, 0.5);
-      //transition   пол дня убито на эффект :-)
+	 background-color: rgba(0, 0, 0, 0.7);
+      //transition
       opacity: 0;
-      transition: opacity 0.8s, visibility 0s 0.8s;
+      transition: opacity 0.8s;
+
+      h4 {
+        color: white;
+        font-family: "Droid Sans";
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 30px;
+      }
+      a {
+        color: white;
+        font-family: "Droid Serif";
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration: none;
+        margin: 0 auto;
+        /* padding: 0; */
+        display: block;
+        width: 110px;
+        border: 1px solid white;
+        border-radius: 15px;
+        text-align: center;
+        padding: 9px 0;
+      }
 
     }
   }
 }
 
 .icon-group-list li:hover .hover {
-  visibility: visible;
-  //
+  //visibility: visible;
+
   opacity: 1;
-  transition: opacity 0.8s, visibility 0s;
+  transition: opacity 0.8s;
 
 }
 
