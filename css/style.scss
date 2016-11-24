@@ -27,6 +27,7 @@
   font-family: "Droid Sans", sans-serif;
   font-size: 45px;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 //------------shared styles -------------------
@@ -196,7 +197,7 @@ header {
 //-------------------------  icon-group ------------------------
 .icon-group {
   //background-color: antiquewhite; // TEMP
-  height: 1046px; //TEMP
+  //height: 1046px; //TEMP
   color: #2c3e50;
 
   h2 {
@@ -209,6 +210,7 @@ header {
   ul {
     list-style-type: none;
     margin: 0 auto;
+    margin-top: 60px;
     padding: 0;
     width: 690px;
   }
@@ -228,9 +230,24 @@ header {
     font-weight: 400;
     text-decoration: none;
     color: #2c3e50;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  a:hover {
+    color: #2ecc71;
 
   }
   .active {
+    border: 1px solid #2ecc71;
+    border-radius: 20px;
+    background-color: #2ecc71;
+    color: white;
+    padding: 3px 15px 7px 15px;
+  }
+  .active:hover {
+    color: white;
   }
 
 }
@@ -240,6 +257,8 @@ header {
   /* margin: 0 auto; */
   margin-left: 40px;
   padding: 0;
+  margin-top: 95px;
+  margin-bottom: 52px;
 
   li {
     display: inline-block;
