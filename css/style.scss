@@ -58,7 +58,7 @@
 .intro-bg {
   background: url("../img/header-background.png") center no-repeat;
   background-size: cover;
-  height: 777px; // TEMP
+  //height: 777px; // TEMP
 
 }
 
@@ -68,8 +68,10 @@ header {
 
   h1 {
     float: left;
-    padding-left: 50px;
-    padding-top: 50px;
+    /* padding-left: 50px; */
+    /* padding-top: 50px; */
+    margin-left: 155px;
+    margin-top: 47px;
 
   }
 
@@ -77,8 +79,8 @@ header {
 
 .header-nav {
   float: right;
-  margin-top: 50px;
-  margin-right: 50px;
+  margin-top: 42px;
+  margin-right: 119px;
 
   ul {
 
@@ -86,7 +88,7 @@ header {
   }
   li {
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 17px;
     a {
 	 color: white;
 	 font-family: "Droid Sans";
@@ -107,22 +109,27 @@ header {
     font-family: "Droid Sans", sans-serif;
     font-size: 81px;
     font-weight: 700;
-    padding-left: 200px;
+    /* padding-left: 200px; */
     /* display: inline-block; */
     width: 829px;
     text-align: center;
+    margin: 0 auto;
+    margin-top: 145px;
 
   }
   a {
     width: 100px;
     display: block;
     margin: 0 auto;
+    margin-top: 110px;
+    margin-bottom: 93px;
     /* text-align: center; */
     font-family: "Droid Serif", serif;
     font-size: 27px;
     font-weight: 400;
     color: white;
     text-decoration: none;
+
     span {
 
 	 display: block;
