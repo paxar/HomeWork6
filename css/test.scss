@@ -1,24 +1,48 @@
+
+
+
 .icon-group-list {
   position: relative;
   float: left;
-  list-style: none; }
-  .icon-group-list li {
+  list-style: none;
+  li {
     width: 348px;
     height: 260px;
-    overflow: hidden; }
-  .icon-group-list .img {
+    overflow: hidden;
+
+
+  }
+  .img {
     min-width: 200px;
-    min-height: 200px; }
-  .icon-group-list .hover {
+    min-height: 200px;
+
+
+
+  }
+  .hover {
     position: absolute;
     display: none;
     top: 0;
     width: inherit;
     height: inherit;
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.5);
+
+  }
+
+}
 
 .icon-group-list:hover .hover {
   /*top: 0px;*/
-  display: block; }
+  display: block;
 
-/*# sourceMappingURL=test.css.map */
+}
+
+
+
+.hover h4 {
+
+}
+
+.hover a {
+
+}
