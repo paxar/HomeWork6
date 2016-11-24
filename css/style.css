@@ -59,11 +59,6 @@ header {
       transition-duration: 0.5s; }
     .header-nav li a:hover {
       letter-spacing: 1px; }
-    .header-nav li a:active {
-      -webkit-transition-duration: 0.5s;
-      -o-transition-duration: 0.5s;
-      -moz-transition-duration: 0.5s;
-      transition-duration: 0.5s; }
 
 .intro h2 {
   color: white;
@@ -313,7 +308,6 @@ header {
       font-size: 39px; }
 
 .feedback {
-  height: 860px;
   color: #2c3e50; }
   .feedback h2 {
     margin-top: 120px;
@@ -329,46 +323,70 @@ header {
 
 .feedback-items-wrapper {
   float: right;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 127px; }
 
 #feedback-form {
-  width: 440px;
+  width: 370px;
   float: left;
-  margin-right: 50px; }
-  #feedback-form label {
-    /* display: block; */
+  margin-top: 30px;
+  margin-right: 100px;
+  /*label {
+    !* display: block; *!
     float: left;
-    /* overflow: hidden; */
+    !* overflow: hidden; *!
     border-bottom: 2px solid #2ecc71;
     color: #2c3e50;
     font-family: "Droid Serif";
     font-size: 28px;
-    font-weight: 400; }
+    font-weight: 400;
+  }*/ }
   #feedback-form input[name] {
-    /* width: inherit; */
-    /* height: 31px; */
+    width: inherit;
+    height: 31px;
+    margin: 20px 0;
+    padding: 5px 0;
     border: none;
-    /* margin: 10px 0; */
-    /* padding: 5px 0; */
     border-bottom: 2px solid #2ecc71;
     color: #2c3e50;
     font-family: "Droid Serif";
     font-size: 26px;
     font-weight: 400; }
   #feedback-form textarea {
-    resize: none; }
+    resize: none;
+    width: inherit;
+    height: 126px;
+    margin: 40px 0;
+    padding: 7px 0;
+    border: none;
+    border-bottom: 2px solid #2ecc71;
+    color: #2c3e50;
+    font-family: "Droid Serif";
+    font-size: 26px;
+    font-weight: 400; }
+  #feedback-form input[value] {
+    width: 130px;
+    color: white;
+    font-family: "Droid Serif";
+    font-size: 21px;
+    font-weight: 400;
+    background-color: #2ecc71;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 0; }
 
 .feedback-contacts {
   width: 210px;
   overflow: hidden;
-  margin-right: 220px;
+  padding-top: 35px;
+  margin-right: 225px;
   font-family: "Droid Sans", sans-serif; }
   .feedback-contacts dt {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 700; }
   .feedback-contacts dt:nth-of-type(n+2) {
-    margin-top: 20px; }
+    margin-top: 33px; }
   .feedback-contacts dd {
     margin-left: 0;
     font-size: 20px;
