@@ -254,7 +254,6 @@ header {
 
 .persons {
   background-color: #2980b9;
-  height: 907px;
   color: white; }
   .persons h2 {
     margin-top: 120px;
@@ -267,6 +266,7 @@ header {
   /* width: 740px; */
   list-style-type: none;
   margin: 0 auto;
+  margin-top: 66px;
   padding: 0;
   text-align: center; }
 
@@ -275,7 +275,8 @@ header {
   width: 300px;
   margin: 0 50px;
   padding: 0;
-  text-align: center; }
+  text-align: center;
+  color: white; }
   .persons-list-item img {
     padding: 5px;
     border: 1px solid white;
@@ -288,12 +289,23 @@ header {
   .persons-list-item p {
     font-family: "Droid Serif";
     font-size: 20px;
-    font-weight: 400; }
+    font-weight: 400;
+    line-height: 30px; }
   .persons-list-item ul {
-    list-style-type: none; }
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 100px; }
   .persons-list-item li {
     display: inline-block;
-    padding: 0; }
+    margin: 0 17px; }
+    .persons-list-item li a i {
+      border: 3px solid white;
+      border-radius: 50%;
+      width: 75%;
+      padding: 8px;
+      color: white;
+      font-size: 39px; }
 
 .feedback {
   height: 860px;
