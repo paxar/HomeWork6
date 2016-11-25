@@ -296,15 +296,19 @@ header {
     margin-top: 40px;
     margin-bottom: 100px; }
   .persons-list-item li {
-    display: inline-block;
-    margin: 0 17px; }
-    .persons-list-item li a i {
+    display: inline-block; }
+    .persons-list-item li i {
       border: 3px solid white;
       border-radius: 50%;
-      width: 75%;
-      padding: 8px;
+      width: 40px;
+      padding: 7px;
       color: white;
-      font-size: 39px; }
+      font-size: 40px;
+      margin: 0 17px; }
+    .persons-list-item li i:hover {
+      padding-top: 6px;
+      font-size: 42px;
+      margin-left: 17px; }
 
 .feedback {
   color: #2c3e50; }
@@ -374,7 +378,16 @@ header {
     background-color: #2ecc71;
     border-radius: 20px;
     border: none;
-    padding: 12px 0; }
+    padding: 12px 0;
+    margin-left: 1px;
+    -webkit-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    transition-duration: 0.7s; }
+  #feedback-form input[value]:hover {
+    /*width: 133px;
+    margin-left: 0;*/
+    background-color: #2c3e50; }
 
 .feedback-contacts {
   width: 210px;
@@ -426,11 +439,14 @@ header {
     .footer .footer-contacts li a {
       display: block;
       margin: 7px 0;
+      padding: 0 3px;
       color: white;
       font-family: "Droid Sans";
       font-size: 16px;
       font-weight: 700;
       text-decoration: none; }
+    .footer .footer-contacts li a:hover {
+      padding: 0 2px 0 4px; }
   .footer .footer-socnetworks {
     list-style-type: none;
     float: left;
@@ -441,15 +457,19 @@ header {
     margin-bottom: 68px;
     padding: 0; }
     .footer .footer-socnetworks li {
-      display: inline-block;
-      margin: 0 10px; }
+      display: inline-block; }
       .footer .footer-socnetworks li i {
-        color: white;
-        font-size: 40px;
-        width: 42px;
         border: 3px solid white;
         border-radius: 50%;
-        text-align: center;
-        padding: 7px; }
+        width: 40px;
+        padding: 7px;
+        color: white;
+        font-size: 40px;
+        margin: 0 10px;
+        text-align: center; }
+      .footer .footer-socnetworks li i:hover {
+        padding: 6px 7px;
+        font-size: 42px;
+        margin-left: 10px; }
 
 /*# sourceMappingURL=style.css.map */
