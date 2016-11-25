@@ -30,6 +30,13 @@
   letter-spacing: 1px;
 }
 
+@mixin transition($sec) {
+  -webkit-transition-duration: $sec;
+  -o-transition-duration: $sec;
+  -moz-transition-duration: $sec;
+  transition-duration: $sec;
+}
+
 //------------shared styles -------------------
 
 .body {
@@ -43,7 +50,6 @@
   width: 1280px;
   margin: 0 auto;
   overflow: hidden;
-  //background-color: silver; //TEST
   // border: 1px dotted; //TEST
 }
 
@@ -60,7 +66,6 @@
   background: url("../img/header-background.png") center no-repeat;
   background-size: cover;
   //height: 777px; // TEMP
-
 }
 
 //-------------header--------------------------
@@ -69,13 +74,9 @@ header {
 
   h1 {
     float: left;
-    /* padding-left: 50px; */
-    /* padding-top: 50px; */
     margin-left: 155px;
     margin-top: 47px;
-
   }
-
 }
 
 .header-nav {
@@ -91,42 +92,35 @@ header {
     display: inline-block;
     padding: 0 17px;
     a {
-	 color: white;
-	 font-family: "Droid Sans";
-	 font-size: 22px;
-	 font-weight: 400;
-	 text-decoration: none;
-      -webkit-transition-duration: 0.5s;
-      -o-transition-duration: 0.5s;
-      -moz-transition-duration: 0.5s;
-      transition-duration: 0.5s;
+
+      font-family: "Droid Sans";
+      font-size: 22px;
+      font-weight: 400;
+      text-decoration: none;
+      color: white;
+      @include transition(0.5s)
     }
     a:hover {
       letter-spacing: 1px;
-      // font-weight: bold;
-
     }
 
   }
 
 }
 
-
 //---------------------  intro  --------------------------
 
 .intro {
 
   h2 {
-    color: white;
+    width: 829px;
+    margin: 0 auto;
+    margin-top: 145px;
     font-family: "Droid Sans", sans-serif;
     font-size: 81px;
     font-weight: 700;
-    /* padding-left: 200px; */
-    /* display: inline-block; */
-    width: 829px;
     text-align: center;
-    margin: 0 auto;
-    margin-top: 145px;
+    color: white;
 
   }
   a {
@@ -142,29 +136,23 @@ header {
     color: white;
     text-decoration: none;
 
-
-
-
     span {
 
-	 display: block;
-	 width: 59px;
-	 height: 59px;
-	 margin: 20px auto;
-	 border: 1px solid #2ecc71;
-	 border-radius: 50%;
-	 background-color: #2ecc71;
-	 background-image: url(../img/rounded-arrow.png);
-	 background-repeat: no-repeat;
-	 background-position: center;
+      display: block;
+      width: 59px;
+      height: 59px;
+      margin: 20px auto;
+      border: 1px solid #2ecc71;
+      border-radius: 50%;
+      background-color: #2ecc71;
+      background-image: url(../img/rounded-arrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
 
     }
   }
   a:hover {
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    @include transition(0.5s);
     color: #2ecc71;
   }
 }
@@ -180,6 +168,7 @@ header {
   }
 
 }
+
 .content-intro {
   width: 756px;
   margin: 0 auto;
@@ -213,16 +202,15 @@ header {
     color: white;
 
     img {
-	 display: block;
-	 margin: 0 auto;
+      display: block;
+      margin: 0 auto;
     }
 
     h3 {
-	 font-family: "Droid Sans", sans-serif;
-	 font-size: 26px;
+      font-family: "Droid Sans", sans-serif;
+      font-size: 26px;
     }
     p {
-
 
       color: white;
       font-family: "Droid Serif";
@@ -230,7 +218,6 @@ header {
       font-weight: 400;
       line-height: 30px;
     }
-
 
   }
   .bootstrap-icon {
@@ -286,10 +273,7 @@ header {
     font-weight: 400;
     text-decoration: none;
     color: #2c3e50;
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    @include transition(0.5s)
   }
   a:hover {
     color: #2ecc71;
@@ -328,16 +312,16 @@ header {
     position: relative;
 
     img {
-	 width: inherit;
-	 height: inherit;
+      width: inherit;
+      height: inherit;
     }
     .hover {
-	 position: absolute;
-	 //display: none;
-	 top: 10px;
-	 width: inherit;
-	 height: inherit;
-	 background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      //display: none;
+      top: 10px;
+      width: inherit;
+      height: inherit;
+      background-color: rgba(0, 0, 0, 0.7);
       //transition
       opacity: 0;
       transition: opacity 0.8s;
@@ -449,13 +433,15 @@ header {
       font-size: 40px;
       margin: 0 17px;
 
-
+      @include transition(0.5s)
 
     }
     i:hover {
-      padding-top: 6px;
+      /*padding-top: 5px;
       font-size: 42px;
-      margin-left: 17px;
+      margin-left: 17px;*/
+      color: #2980b9;
+      background-color: white;
     }
 
   }
@@ -483,7 +469,7 @@ header {
 .feedback-items-wrapper {
   float: right;
   overflow: hidden;
-  width: 905px;  // mozilla hack
+  width: 905px; // firefox fix
   margin-bottom: 127px;
 }
 
@@ -492,9 +478,6 @@ header {
   float: left;
   margin-top: 30px;
   margin-right: 100px;
-
-
-
 
   /*label {
     !* display: block; *!
@@ -519,6 +502,7 @@ header {
     font-size: 26px;
     font-weight: 400;
     outline: none;
+    background-color: white; //firefox fix
 
   }
   textarea {
@@ -534,6 +518,7 @@ header {
     font-size: 26px;
     font-weight: 400;
     outline: none;
+    background-color: white; //firefox fix
   }
   input[value] {
     width: 130px;
@@ -543,19 +528,17 @@ header {
     font-weight: 400;
     background-color: #2ecc71;
     border-radius: 20px;
-    border: none;
-    padding: 12px 0;
+    border: 2px solid #2ecc71;
+    padding: 11px 0;
     margin-left: 1px;
-    -webkit-transition-duration: 0.7s;
-    -o-transition-duration: 0.7s;
-    -moz-transition-duration: 0.7s;
-    transition-duration: 0.7s;
+    @include transition(0.5s)
 
   }
   input[value]:hover {
     /*width: 133px;
     margin-left: 0;*/
-    background-color: #2c3e50;
+    background-color: white;
+    color: #2ecc71;
 
   }
 }
@@ -580,8 +563,8 @@ header {
     font-weight: 400;
     line-height: 33px;
     a {
-	 text-decoration: none;
-	 color: #2c3e50;
+      text-decoration: none;
+      color: #2c3e50;
 
     }
   }
@@ -633,11 +616,9 @@ header {
       }
       a:hover {
 
-
         padding: 0 2px 0 4px;
       }
     }
-
 
   }
   .footer-socnetworks {
@@ -653,7 +634,7 @@ header {
     li {
       display: inline-block;
 
-      i {
+      /*a {
         border: 3px solid white;
         border-radius: 50%;
         width: 40px;
@@ -664,15 +645,35 @@ header {
         margin: 0 10px;
         text-align: center;
 
+      }*/
+
+      i {
+        border: 3px solid white;
+        border-radius: 50%;
+        width: 40px;
+        // height: 100%;
+        padding: 7px;
+        color: white;
+        font-size: 40px;
+        margin: 0 10px;
+        text-align: center;
+        @include transition(0.5s)
 
       }
       i:hover {
-        padding: 6px 7px;
+        /*padding: 5px 7px 7px 7px;
         font-size: 42px;
-        margin-left: 10px;
+        margin-left: 10px;*/
+
+        background-color: white;
+        color: #2c3e50;
+        /*-webkit-transition-duration: 0.7s;
+        -o-transition-duration: 0.7s;
+        -moz-transition-duration: 0.7s;
+        transition-duration: 0.5s;*/
       }
-
-
     }
+
   }
 }
+
