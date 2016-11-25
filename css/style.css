@@ -327,6 +327,7 @@ header {
 .feedback-items-wrapper {
   float: right;
   overflow: hidden;
+  width: 905px;
   margin-bottom: 127px; }
 
 #feedback-form {
